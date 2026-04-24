@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hepatitis C Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Hepatitis C Prediction App</h1>
+
+    <form method="POST" action="/predict">
+
+        <input type="number" step="any" name="age" placeholder="Age" required>
+
+        <select name="sex">
+            <option value="">Select Gender</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <input type="number" step="any" name="alb" placeholder="ALB" required>
+        <input type="number" step="any" name="alp" placeholder="ALP" required>
+        <input type="number" step="any" name="alt" placeholder="ALT" required>
+        <input type="number" step="any" name="ast" placeholder="AST" required>
+        <input type="number" step="any" name="bil" placeholder="BIL" required>
+        <input type="number" step="any" name="che" placeholder="CHE" required>
+        <input type="number" step="any" name="chol" placeholder="CHOL" required>
+        <input type="number" step="any" name="crea" placeholder="CREA" required>
+
+        <button type="submit">Predict</but

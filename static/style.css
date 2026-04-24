@@ -1,0 +1,28 @@
+body {
+    background: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+}
+
+button {
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
